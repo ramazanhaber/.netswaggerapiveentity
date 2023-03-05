@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiegitim1", "apiegitim1\apiegitim1.csproj", "{43751219-5308-4134-8AC9-47F7008B95BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43751219-5308-4134-8AC9-47F7008B95BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43751219-5308-4134-8AC9-47F7008B95BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43751219-5308-4134-8AC9-47F7008B95BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43751219-5308-4134-8AC9-47F7008B95BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F6D510B9-A049-400D-B41D-B05BD5856650}
+	EndGlobalSection
+EndGlobal
