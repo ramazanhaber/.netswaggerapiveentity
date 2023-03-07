@@ -16,7 +16,6 @@ using System.Web.Http.Description;
 namespace apiegitim1.Controllers
 {
     [EnableCors("*", "*", "*")]
-
     public class KategoriController : ApiController
     {
         public List<Kategoriler> listele()
