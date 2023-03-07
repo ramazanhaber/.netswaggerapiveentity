@@ -15,7 +15,7 @@ using System.Web.Http.Description;
 
 namespace apiegitim1.Controllers
 {
-    [EnableCors("*", "*", "*")] // naber
+    [EnableCors("*", "*", "*")] // naber wad
     public class KategoriController : ApiController
     {
         public List<Kategoriler> listele()
