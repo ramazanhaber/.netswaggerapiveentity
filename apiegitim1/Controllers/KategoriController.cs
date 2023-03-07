@@ -1,4 +1,6 @@
-﻿using apiegitim1.Entities;
+﻿using Apiders2.Models;
+using apiegitim1.Entities;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -137,6 +139,23 @@ left join Kategoriler  on Urunler.kategoriId=Kategoriler.id";
             list.Add(kategoriler);
 
             return list;
+        }
+
+
+        public void datatableToObject()
+        {
+
+            using (var dbContext = new POSDBEntities()) // using demek belleği çıkınca temizlesin demek
+            {
+                string query = @"select Kategoriler.id,Kategoriler.ad,kategoriId,tarih,fiyat,aktif from Urunler
+left join Kategoriler on Kategoriler.id=Urunler.kategoriId";
+
+                DataTable dataTable = getQueryToDataTableNew(query, dbContext);
+                string json = JsonConvert.SerializeObject(dataTable);
+                List<KatUrunModel> modelim = JsonConvert.DeserializeObject<List<KatUrunModel>>(json);
+            }
+
+           
         }
 
 
